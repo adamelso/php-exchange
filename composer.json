@@ -1,0 +1,34 @@
+{
+    "name": "php-exchange/php-exchange",
+    "description": "PHP library for accessing Microsoft Exchange Web Services",
+    "require": {
+        "php": "~5.4",
+        "symfony/yaml": "~2",
+        "symfony/console": "~2",
+        "symfony/filesystem": "~2",
+        "symfony/config": "~2",
+        "symfony/dependency-injection": "~2",
+        "guzzlehttp/guzzle": "~4"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2",
+        "behat/behat": "~3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Elsodaney",
+            "email": "adam.elso@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
