@@ -28,6 +28,7 @@ class AccountClient
         $response = $client->get('/', [
             'config' => [
                 'curl' => [
+                    CURLOPT_HTTPAUTH => CURLAUTH_NTLM,
                     CURLOPT_USERPWD  => sprintf('%s:%s', $this->username, $this->password),
                 ]
             ]
